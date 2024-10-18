@@ -42,7 +42,6 @@
 
 
 .card {
-    background-image: ;
     display: block;
     border: none;
     background-color: transparent;
@@ -82,10 +81,6 @@ a{
     opacity: 90%;
     /* transition: opacity 0.5s ease; */
 }
-
-
-
-
 .card-title {
     display: contents;
     font-size: 1.5em;
@@ -98,6 +93,31 @@ a{
     transform: translate(-50%, -50%);
     padding: 10px 20px; /* Tạo khoảng cách cho chữ */
 }
+
+.leftTxt .card-body{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color:#FFF2D5 ; /* Màu nền với độ mờ */
+    padding: 20px;
+    max-width: 50%; /* Đảm bảo hiển thị nội dung chiếm nửa trái của ảnh */
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.rightTxt .card-body{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color:#FFF2D5 ; /* Màu nền với độ mờ */
+    padding: 20px;
+    max-width: 50%; /* Đảm bảo hiển thị nội dung chiếm nửa phải của ảnh */
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
 
 
 

@@ -1,6 +1,10 @@
 body{
     font-family:'BeauLuloClean-OneBold', monospace;
-   
+}
+
+section, footer{
+    width: 80%;
+    margin: 0 auto;
 }
 
 .carousel-caption {
@@ -26,7 +30,6 @@ body{
     width: 70%;
     font-size: 14px;
 }
-
 
 .carousel-item{
     padding-bottom: 120px;
@@ -157,3 +160,57 @@ h6{
     width: 50%;
     height: 50%;
 }
+
+
+/* General styling for the footer */
+footer {
+    background-color: #f7f7f7; /* Light background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* Align categories */
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer h4 {
+    font-size: 18px;
+    color: #4b5934; /* Dark green for headings */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333; /* Dark grey for links */
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #4b5934; /* Dark green on hover */
+}
+
+/* Specific styling for different sections */
+footer .category-news, 
+footer .category-store, 
+footer .category-drinks, 
+footer .category-policy {
+    flex: 1; /* Make all categories the same width */
+}
+
+footer .category-news h4,
+footer .category-store h4,
+footer .category-drinks h4,
+footer .category-policy h4 {
+    text-transform: uppercase; /* Capitalize titles */
+}
+

@@ -2,6 +2,124 @@ body{
     font-family:'BeauLuloClean-OneBold', monospace;
 }
 
+/* ---------------------Header----------------------- */
+.header {
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid var(--gray-border-color);
+    position: relative;
+}
+
+.header-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.header-left, .header-middle, .header-right {
+    display: flex;
+}
+
+.header-middle {
+    margin: 0 65px;
+    align-items: center;
+}
+.header-middle img {
+    width: 85px;
+    height: 43px;
+}
+
+.nav-cell {
+    padding: 40px 30px;
+    position: relative;
+}
+
+.header-left .nav-cell:nth-child(1) {
+    padding-left: 0;
+}
+.header-left .nav-cell:nth-child(3) {
+    padding-right: 0;
+}
+.header-right .nav-cell:nth-child(1) {
+    padding-left: 0;
+}
+.header-right .nav-cell:nth-child(3) {
+    padding-right: 0;
+}
+
+.nav-cell > a {
+    font-size: 20px;
+    color: var(--lighter-text-color);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-cell > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--theme-color);
+    transition: all 0.3s ease;
+}
+.nav-cell > a:hover::after {
+    width: 100%;
+}
+
+/* -------------------Dialog----------------------- */
+.header-dialog {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    top: 120%;
+    left: 0;
+    width: 190px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: var(--default-shadow-value);
+    transition: all 0.3s ease;
+}
+.dialog-cell {
+    padding: 10px 15px;
+    text-align: left;
+    margin: 0;
+    border-bottom: var(--light-border-value);
+}
+.header-left .nav-cell:nth-child(2):hover .header-dialog {
+    top: 75%;
+    opacity: 1;
+    visibility: visible;
+}
+.header-right .nav-cell:nth-child(3):hover .header-dialog {
+    top: 75%;
+    opacity: 1;
+    visibility: visible;
+}
+.dialog-cell > a {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--lighter-text-color);
+    position: relative;
+}
+.dialog-cell > a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: 0;
+    background-color: #3c5e2c;
+    height: 1px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.dialog-cell > a:hover::after {
+    width: 100%;
+}
+
 section, footer{
     width: 70%;
     margin: 0 auto;
